@@ -13,3 +13,28 @@ Here is how to use it
 4. At this point you can either reboot (borning) or run $sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist
 
 Good Luck
+
+And for those that like to see things in action, here are the nmap scans from both UDP and TCP.
+
+#UDP Scan
+sudo nmap -sU -Pn -p 1-65535 .50
+
+Starting Nmap 7.31 ( https://nmap.org ) at 2016-11-20 09:47 CST
+Nmap scan report for .50
+Host is up (0.079s latency).
+All 65535 scanned ports on .50 are open|filtered
+MAC Address: omitted (Apple)
+
+Nmap done: 1 IP address (1 host up) scanned in 5208.70 seconds
+
+#TCP Scan
+sudo nmap -sS -Pn -p 1-65535 .50
+Password:
+
+Starting Nmap 7.31 ( https://nmap.org ) at 2016-11-20 08:58 CST
+Nmap scan report for .50
+Host is up (0.17s latency).
+All 65535 scanned ports on .50 are filtered
+MAC Address: omitted (Apple)
+
+Nmap done: 1 IP address (1 host up) scanned in 11092.96 seconds
