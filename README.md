@@ -19,6 +19,7 @@ Also if you really want to make your life easier add the following to your .prof
 3. alias pflist='sudo pfctl -sr'
 4. alias pfload='sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist'
 5. alias pfunload='sudo launchctl unload /Library/LaunchDaemons/org.pflockdown.plist'
+6. alias pftest='sudo pfctl -v -n -f /etc/pf.anchors/org.pflockdown.conf'
 
 Good Luck
 
