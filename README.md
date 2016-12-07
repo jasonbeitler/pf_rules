@@ -12,6 +12,14 @@ Here is how to use it
 
 4. At this point you can either reboot (borning) or run $sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist
 
+Also if you really want to make your life easier add the following to your .profile
+
+alias pfedit='sudo vim /etc/pf.anchors/org.pflockdown.conf'
+alias pfflush='sudo pfctl -F all'
+alias pflist='sudo pfctl -sr'
+alias pfload='sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist'
+alias pfunload='sudo launchctl unload /Library/LaunchDaemons/org.pflockdown.plist'
+
 Good Luck
 
 And for those that like to see things in action, here are the nmap scans from both UDP and TCP.
