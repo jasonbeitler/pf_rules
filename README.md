@@ -14,11 +14,11 @@ Here is how to use it
 
 Also if you really want to make your life easier add the following to your .profile
 
-alias pfedit='sudo vim /etc/pf.anchors/org.pflockdown.conf'
-alias pfflush='sudo pfctl -F all'
-alias pflist='sudo pfctl -sr'
-alias pfload='sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist'
-alias pfunload='sudo launchctl unload /Library/LaunchDaemons/org.pflockdown.plist'
+1. alias pfedit='sudo vim /etc/pf.anchors/org.pflockdown.conf'
+2. alias pfflush='sudo pfctl -F all'
+3. alias pflist='sudo pfctl -sr'
+4. alias pfload='sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist'
+5. alias pfunload='sudo launchctl unload /Library/LaunchDaemons/org.pflockdown.plist'
 
 Good Luck
 
