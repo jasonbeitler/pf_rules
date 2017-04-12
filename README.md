@@ -1,5 +1,7 @@
 # pf_rules
 
+##As of 10.12.4 this just stopped working, I have not had time to look for a fix##
+
 This is just a very locked down PF Rule Set. Before you start yelling at me about letting eveything outbound, I am using LittleSnitch for outbound Firewall. 
 
 Here is how to use it
