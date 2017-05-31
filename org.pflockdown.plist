@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer/DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-        <key>Label</key>
-        <string>org.pflockdown.plist</string>
-            <key>RunAtLoad</key> <true/>
-            <key>KeepAlive</key> <true/>
-            <key>LaunchOnlyOnce</key> <true/>
-        <key>ProgramArguments</key>
-        <array>   
-                <string>/sbin/pfctl</string>
-                <string>-e</string>
-                <string>-f</string>
-                <string>/etc/pf.anchors/org.pflockdown.conf</string>
-        </array>
+	<key>Label</key>
+	<string>org.pflockdown.plist</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>LaunchOnlyOnce</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>sh</string>
+		<string>-c</string>
+		<string>/sbin/pfctl -e -f /etc/pf.anchors/org.pflockdown.conf</string>
+	</array>
 </dict>
 </plist>
