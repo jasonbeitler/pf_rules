@@ -21,6 +21,8 @@ Also if you really want to make your life easier add the following to your .prof
 5. alias pfunload='sudo launchctl unload /Library/LaunchDaemons/org.pflockdown.plist'
 6. alias pftest='sudo pfctl -v -n -f /etc/pf.anchors/org.pflockdown.conf'
 
+* Note some changes were made to Time and DNS. You will need to adjust to fit your needs. Pay close attention to DNS and if you are using a Corporate VPN you will need to add those DNS servers or it will not work. 
+
 Good Luck
 
 And for those that like to see things in action, here are the nmap scans from both UDP and TCP.
