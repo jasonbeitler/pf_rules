@@ -8,8 +8,6 @@
     <true/>
     <key>LaunchOnlyOnce</key>
     <true/>
-    <key>KeepAlive</key>
-    <true/>
 	<key>ProgramArguments</key>
 	<array>
 		<string>sh</string>
