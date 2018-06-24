@@ -10,7 +10,9 @@ Here is how to use it
 
 3. $sudo mv org.pflockdown.plist /Library/LaunchDaemons
 
-4. At this point you can either reboot (borning) or run $sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist
+4. At this point you can either reboot (borning) or run 
+
+    $sudo launchctl load /Library/LaunchDaemons/org.pflockdown.plist
 
 Also if you really want to make your life easier add the following to your .profile
 
