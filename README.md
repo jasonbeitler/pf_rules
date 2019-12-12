@@ -1,3 +1,6 @@
+### Note
+If you use this method in a corp environment you will still need to enable the GUI Firewall or it could cause isues with MDM. When you do enable the GUI Firewall be sure to untick "Blcok all incomming" and "Enable Stealth Mode". I know it sounds scarry but the PFRules will take over and you will still be protected. 
+
 # pf_rules
 
 This is just a very locked down PF Rule Set. Before you start yelling at me about letting eveything outbound, I am using LittleSnitch for outbound Firewall. 
