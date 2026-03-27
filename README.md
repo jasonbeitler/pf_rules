@@ -1,5 +1,5 @@
 ### Note
-If you use this method in a corp environment you will still need to enable the GUI Firewall or it could cause isues with MDM. When you do enable the GUI Firewall be sure to untick "Blcok all incomming" and "Enable Stealth Mode". I know it sounds scarry but the PFRules will take over and you will still be protected. 
+If you use this method in a corp environment you will still need to enable the GUI Firewall or it could cause isues with MDM or compliance. 
 
 # pf_rules
 
@@ -26,7 +26,7 @@ Also if you really want to make your life easier add the following to your .prof
 5. alias pfunload='sudo launchctl unload /Library/LaunchDaemons/org.pflockdown.plist'
 6. alias pftest='sudo pfctl -v -n -f /etc/pf.anchors/org.pflockdown.conf'
 
-* Note some changes were made to Time and DNS. You will need to adjust to fit your needs. Pay close attention to DNS and if you are using a Corporate VPN you will need to add those DNS servers or it will not work. 
+* Note - Pay close attention to DNS and if you are using a Corporate VPN you will need to add those DNS servers or it will not work. This assumes you are using cloudflare or Quad9's (dhcp assigned, stubby, dnsmasq, etc)
 
 Good Luck
 
